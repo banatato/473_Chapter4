@@ -23,7 +23,7 @@ h1 {
 	font-family: 'Ubuntu', sans-serif;
 	font-style:italic;
 	font-size: 3em;
-	color: #b33;
+	color: #000;
 	float: left;
 	width: 570px;
 }
@@ -40,7 +40,7 @@ header nav {
 }
 
 a {
-	color: #f00;
+	color: #000;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -62,7 +62,7 @@ main h3 {
 .tabs a span {
 	display: inline-block;
 	border-radius: 5px 5px 0 0;
-	width: 100px;
+	width: 120px;
 	margin-right: 10px;
 	text-align: center;
 	background: #ddd;
@@ -96,12 +96,18 @@ main .content button {
 	font-size: 1.3em;
 }
 
-main .content p {
-	background: yellow;
-}
-
 main .content input {
 	font-size: 1.5em;
+}
+
+ol {
+	display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
 }
 
 footer {

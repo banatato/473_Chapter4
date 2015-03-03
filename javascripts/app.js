@@ -9,7 +9,7 @@ var main = function () {
 		"Make up some new ToDos",
 		"Get Groceries"
 	];
-
+	
 	$(".tabs span").toArray().forEach(function (element) {
 		var $element = $(element);
 
@@ -50,6 +50,9 @@ var main = function () {
 				});
 
 				$content = $("<div>").append($input).append($button);
+			} else if ($element.parent().is(":nth-child(4)")) {
+				//demonstration tab for HW 3
+				$content = $("<a href='colorbox.html'>View Slideshow</a>");
 			}
 
 			$("main .content").append($content);
