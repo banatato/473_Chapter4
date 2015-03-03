@@ -21,9 +21,11 @@ header {
 
 h1 {
 	font-family: 'Ubuntu', sans-serif;
+	font-style:italic;
 	font-size: 3em;
+	color: #b33;
 	float: left;
-	width: 750px;
+	width: 570px;
 }
 
 h5 {
@@ -35,6 +37,12 @@ h5 {
 header nav {
 	float: right;
 	width: 285px;
+}
+
+a {
+	color: #f00;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 main {
@@ -65,6 +73,37 @@ main h3 {
 	background: #eee;
 }
 
+main .content {
+	padding: 30px 10px 30px 10px;
+	border-radius: 0 5px 5px 5px;
+	background: #eee;
+}
+
+main .content li {
+	border-radius: 5px;
+	padding: 3px;
+	background: #eff;
+	margin: 0 0 10px 0;
+}
+
+main .content button {
+	font-weight: bold;
+	padding: 0 3px 0 3px;
+	border-radius: 5px;
+	background: #ccc;
+	cursor: pointer;
+	margin-left: 5px;
+	font-size: 1.3em;
+}
+
+main .content p {
+	background: yellow;
+}
+
+main .content input {
+	font-size: 1.5em;
+}
+
 footer {
 	border-top: 1px solid #dddddd;
 	padding: 40px 0 20px 0;
@@ -75,9 +114,22 @@ footer .contact {
 	width: 570px;
 }
 
+footer .contact p:nth-child(2) {
+	color: #b33;
+	font-style: italic;
+}
+
 footer .sitemap {
 	float: right;
 	width: 285px;
+}
+
+footer ul {
+	width: 230px;
+}
+
+li {
+	list-style: none;
 }
 
 footer .sitemap .left {
