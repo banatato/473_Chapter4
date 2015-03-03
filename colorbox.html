@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+  	<title>Colorbox Slideshow</title>
+    <link href="colorbox.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="javascripts/jquery.colorbox.js"></script>
+    <script>
+    	$(document).ready(function () {
+    		//assign Colorbox event to elements
+    		$(".gallery").colorbox({rel:'gallery', slideshow: true});
+    	});
+    </script>
+  </head>
+
+  <body>
+  	<h1>Slideshow</h1>
+  	<p><a class="gallery" href="../Amazeriffic/images/473-01_HW3_Amazeriffic_inAction_00_NewestTab.png" title="Newest Tab">Newest Tab</a></p>
+  	<p><a class="gallery" href="../Amazeriffic/images/473-01_HW3_Amazeriffic_inAction_01_OldestTab.png" title="Oldest Tab">Oldest Tab</a></p>
+  	<p><a class="gallery" href="../Amazeriffic/images/473-01_HW3_Amazeriffic_inAction_02_AddTab.png" title="Add Tab">Add Tab</a></p>
+  	<p><a class="gallery" href="../Amazeriffic/images/473-01_HW3_Amazeriffic_inAction_03_AddedToDo.png" title="After adding new To-Do item">After adding new To-Do item</a></p>
+  	
+  
+  </body>
+</html>
