@@ -13,7 +13,8 @@ var main = function () {
 	$(".tabs span").toArray().forEach(function (element) {
 		//create ae click handler for this element
 		$(element).on("click", function () {
-			var $element = $(element);
+			var $element = $(element),
+				$content;
 
 			$(".tabs span").removeClass("active");
 			$element.addClass("active");
@@ -22,7 +23,11 @@ var main = function () {
 			if ($element.parent().is(":nth-child(1)")) {
 				console.log("FIRST TAB CLICKED!");
 			} else if ($element.parent().is(":nth-child(2)")) {
-				console.log("SECOND TAB CLICKED!");
+				$content = $("<ul>");
+				toDos.forEach(function (todo) {
+					$content.append($("<li>").text(todo));
+				});
+				$("main .content").append($content);
 			} else if ($element.parent().is(":nth-child(3)")) {
 				console.log("THIRD TAB CLICKED!");
 			}
@@ -30,6 +35,8 @@ var main = function () {
 			return false;
 		});
 	});
+
+	$(".tabs a:first-child span").trigger("click");
 };
 
 $(document).ready(main);
