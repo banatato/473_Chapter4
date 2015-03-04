@@ -50,7 +50,7 @@ var main = function () {
 			for (i = start; i <= end; i++) {
 				fizzbuzz_logic();
 
-				$("#fizzbuzz2").append("<li>" + output + "</li>")
+				$("#fizzbuzz2").append("<li>" + output + "</li>");
 			}
 		}
 	}
@@ -73,7 +73,7 @@ var main = function () {
 				output = arr[i];
 			}
 
-			$("#fizzbuzz3").append("<li>" + output + "</li>")
+			$("#fizzbuzz3").append("<li>" + output + "</li>");
 		}
 	}
 
@@ -95,7 +95,7 @@ var main = function () {
 				output = i;
 			}
 
-			$("#fizzbuzz4").append("<li>" + output + "</li>")
+			$("#fizzbuzz4").append("<li>" + output + "</li>");
 		}
 	}
 
@@ -115,7 +115,7 @@ var main = function () {
 				output = arr[i];
 			}
 
-			$("#fizzbuzz5").append("<li>" + output + "</li>")
+			$("#fizzbuzz5").append("<li>" + output + "</li>");
 		}
 	}
 
